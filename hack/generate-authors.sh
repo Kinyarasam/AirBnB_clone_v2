@@ -13,4 +13,4 @@ cd "$(dirname "$(readlink -f "$BASH_SOURCE")")/.."
 		Justin Majetich <justinmajetich@gmail.com>
 	EOH
 	git log --format='%aN <%aE>' | LC_ALL=C.UTF-8 sort -uf
-} > AUTH
+} > AUTHORS
