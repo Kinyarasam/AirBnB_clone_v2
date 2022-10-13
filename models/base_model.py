@@ -28,7 +28,6 @@ class BaseModel:
             DATETIME, nullable=False,
             default=datetime.utcnow())
 
-
     def __init__(self, *args, **kwargs):
         """Instatntiates a new model"""
         if not kwargs:
@@ -70,7 +69,7 @@ class BaseModel:
             if type(dct[k]) is datetime:
                 dct[k] = dct[k].isoformat()
         if '_sa_instance_state' in dct.keys():
-            del(dct['_sa_instance_state'])
+            del (dct['_sa_instance_state'])
 
         return dct
 
